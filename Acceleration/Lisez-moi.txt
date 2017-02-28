@@ -1,0 +1,1 @@
+Lancer en premier le script matlab, le fichier simulik s'exécutera tout seul.
