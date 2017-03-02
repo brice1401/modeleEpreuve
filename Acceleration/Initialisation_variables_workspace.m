@@ -1,3 +1,6 @@
+clear all
+close all
+
 
 %Paramètres géométriques du véhicule en mm
 
@@ -37,6 +40,10 @@ rap(4) = 18/26;
 rap(5) = 23/30;
 rap(6) = 24/29;
 rap_couronne = 13/45;
+
+%Parametre aerodynamique
+rho = 1.2; %masse volumique de l'air en kg/m3
+Cx = 0.3; %coeff de trainée
 
 %Paramètre initiaux de la simulation
 vitesse_initiale = 0;

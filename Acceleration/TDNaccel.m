@@ -133,7 +133,7 @@
             a_ang = (c_k*10-c_roul)/J_eq; % Acceleration angulaire des roues arrieres
             C_ar = rep*m*g+m*a_ang*(D_roue/2)*h_g/emp; % Charge sur l'essieu arrière avec prise en compte du transfert de masse
             if C_ar > m*g % Cas ou les roues avant se soulevent
-            C_ar = m*g;
+                C_ar = m*g;
             end
             c_trans_ar = coeff_adh*C_ar*D_roue/2; % Couple maximum transmissible
             if c_k > c_trans_ar/10 % Risque de patinage des pneus
