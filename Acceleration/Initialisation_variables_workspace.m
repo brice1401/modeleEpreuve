@@ -44,6 +44,17 @@ rap(5) = 23/30;
 rap(6) = 24/29;
 rap_couronne = 13/45;
 
+%Donnees pour le passage des vitesses
+%les vitesses sont en km/h
+v1 = 62.7;
+v2 = 80.5;
+v3 = 95;
+v4 = 107.9;
+v5 = 118.3;
+
+v_passage = [0, v1, v2, v3, v4, v5]/3.6; %vitesse en m/s
+rapport = [1, 2, 3, 4, 5, 6];
+
 %Parametre aerodynamique
 rho = 1.2; %masse volumique de l'air en kg/m3
 Cx = 0.7; %coeff de trainée
@@ -54,9 +65,9 @@ vitesse_initiale = 0;
 
 
 %Lancement de la simulation :
-%sim('Accel_model_test');
+sim('Accel_model');
 
 
 %Création des graphiques
 
-%run('DessinCourbe.m');
+run('DessinCourbe.m');
